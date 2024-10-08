@@ -1,0 +1,834 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*------------------------------Nav Bar-------------------------------------*/
+
+.navbar .logo img {
+  width: 170px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.navbar-lists {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar-lists p {
+  font-weight: 500;
+  padding: 7px 14px;
+}
+
+.navbar-lists p:hover {
+  background-color: #eeeeee;
+  border-radius: 25px;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.lang-currency a {
+  padding: 10px 16px;
+}
+
+.lang-currency a i {
+  padding-right: 10px;
+  border-right: 2px solid #cccbcb;
+  margin-right: 7px;
+}
+
+.lang-currency a:hover {
+  background-color: #eeeeee;
+  border-radius: 25px;
+}
+
+.sign-in {
+  background-color: black;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+.sign-in a {
+  color: white;
+}
+
+.sign-in:hover {
+  background-color: #333333;
+}
+
+/*-------------------------------Main content---------------------------------------*/
+
+/*---------------------------Section 2------------------------------------*/
+.where-to {
+  padding-top: 48px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.tabs {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tab-names {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  gap: 5px;
+  padding: 3px 0;
+}
+
+.tab-names:hover {
+  border-bottom: 2px solid #545454;
+  p {
+    border: none;
+    padding: 0;
+  }
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #cccbcb;
+  display: flex;
+  padding: 5px 5px 5px 10px;
+  width: 50%;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  gap: 7px;
+}
+
+.search input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search-button {
+  padding: 14px 24px;
+  background-color: #34e0a1;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #bbeed6;
+}
+
+/*--------------------------------Section 3------------------------------------*/
+
+.section3-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.body-ai-image {
+  width: 75%;
+  height: 100%;
+  text-align: center;
+  margin: 70px 0 50px 0;
+  position: relative;
+}
+
+.ai-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.ai-image-desc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: start;
+  width: 100%;
+  top: 13%;
+  left: 7%;
+  color: white;
+  width: 70%;
+}
+
+.ai-image-desc__1 {
+  font-size: 0.75em;
+  padding-bottom: 7px;
+}
+
+.beta {
+  background-color: white;
+  padding: 0.25em 8px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.ai-image-desc__2,
+.ai-image-desc__3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.ai-image-desc__3 {
+  padding-bottom: 4px;
+}
+
+.ai-image-desc__4,
+.ai-image-desc__5 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.ai-image-desc__5 {
+  padding-bottom: 5px;
+}
+
+.try-it-button {
+  background-color: #dfd3ee;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 500;
+  color: #301d60;
+  padding: 10px 20px;
+}
+
+/*------------------------------------------Section 4--------------------------------------------------*/
+.section4-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.partnership-card-corona-container {
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.partnership-card-corona {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 16px 24px 16px 10px;
+}
+
+.partnership-card-corona__image img {
+  padding: 0;
+  border-radius: 10px;
+}
+
+.partnership-card-corona__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.partnership-card-corona__desc1 {
+  background-color: #e0e0e0;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  padding: 5px 7px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.partnership-card-corona__desc2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.partnership-card-corona__desc3 {
+  text-align: justify;
+}
+
+/*------------------------------------------Section 5--------------------------------------------------*/
+.section5-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.travellers-choice-awards-container {
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.travellers-choice-award__title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.travellers-choice-award__title2 {
+  margin-bottom: 13px;
+}
+
+.travellers-choice-awards-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.travellers-choice-awards-card {
+  flex: 1 1 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.travellers-choice-awards-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.travellers-choice-awards-card img:hover {
+  opacity: 0.8;
+}
+
+.travellers-choice-awards-card-image_desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 0 0 10px 10px;
+  left: 0%;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  color: #ffff;
+}
+
+/*------------------------------------------Section 6--------------------------------------------------*/
+.section6-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fav-places-container {
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.fav-places-title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fav-places-title2 {
+  margin-bottom: 13px;
+}
+
+.fav-places-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.fav-places-card {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-places-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.fav-places-card-img img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.fav-places-card-desc {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.fav-places-card_desc1,
+.fav-places-card_desc2 {
+  font-weight: bold;
+}
+
+.fav-places-card_desc1:hover {
+  text-decoration: underline;
+}
+
+.fav-places-card_desc1,
+.fav-places-card_desc2,
+.fav-places-card_desc3 {
+  padding-bottom: 7px;
+}
+
+.fav-places-card_desc2:hover {
+  text-decoration: underline;
+}
+
+.fav-places-card_desc3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 3px;
+}
+.fav-places-card_desc3_span {
+  color: #595959;
+}
+
+/*------------------------------------------Section 7--------------------------------------------------*/
+.section7-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ways-to-tour {
+  margin-bottom: 70px;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.ways-to-tour-title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ways-to-tour-title2 {
+  margin-bottom: 13px;
+}
+
+.ways-to-tour-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.ways-to-tour-card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.ways-to-tour-card_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.ways-to-tour-card_img img:hover {
+  opacity: 0.8;
+}
+
+.ways-to-tour-card_img {
+  position: relative;
+}
+
+.wishlist {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  top: 5%;
+  right: 3%;
+}
+
+.ways-to-tour-card_desc {
+  padding: 5px;
+}
+
+.ways-to-tour-card_desc1 {
+  font-weight: 500;
+}
+
+.rating {
+  fill: #00aa6c;
+}
+
+.ways-to-tour-card_desc2_rating {
+  color: gray;
+  font-size: 12px;
+}
+
+.ways-to-tour-card_desc2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ways-to-tour-card_desc3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*------------------------------------------Section 8--------------------------------------------------*/
+.section8-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.autumn-in-asia-container {
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.autumn-in-asia__title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.autumn-in-asia__title2 {
+  margin-bottom: 13px;
+}
+
+.autumn-in-asia-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.autumn-in-asia-card {
+  flex: 1 1 100%;
+  cursor: pointer;
+}
+
+.autumn-in-asia-card {
+  position: relative;
+}
+
+.autumn-in-asia-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.autumn-in-asia-card img:hover {
+  opacity: 0.8;
+}
+
+.autumn-in-asia-card-image_desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 0 0 10px 10px;
+  left: 0%;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  color: #ffff;
+}
+
+/*------------------------------------------Section 9--------------------------------------------------*/
+.section9-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f1ec;
+  margin-bottom: 70px;
+}
+
+.more-to-explore-container {
+  width: 75%;
+  padding-bottom: 30px;
+}
+
+.more-to-explore_title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.more-to-explore-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.more-to-explore-card {
+  width: 33%;
+  cursor: pointer;
+}
+
+.more-to-explore-card_img img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.more-to-explore-card_img img:hover {
+  opacity: 0.8;
+}
+
+.more-to-explore-card_img {
+  position: relative;
+}
+
+.more-to-explore-wishlist {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+  top: 5%;
+  right: 3%;
+}
+
+.more-to-explore-card_desc {
+  padding: 15px;
+}
+
+.more-to-explore-card_desc1 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.more-to-explore-card_desc1:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------Section 10--------------------------------------------------*/
+.section10-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-destinations-container {
+  margin-bottom: 70px;
+  width: 75%;
+}
+
+.autumn-in-asia__title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.autumn-in-asia__title2 {
+  margin-bottom: 13px;
+}
+
+.autumn-in-asia-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.autumn-in-asia-card {
+  flex: 1 1 100%;
+  cursor: pointer;
+}
+
+.autumn-in-asia-card {
+  position: relative;
+}
+
+.autumn-in-asia-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.autumn-in-asia-card img:hover {
+  opacity: 0.8;
+}
+
+.autumn-in-asia-card-image_desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 0 0 10px 10px;
+  left: 0%;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  color: #ffff;
+}
+
+/*------------------------------------------Section 10--------------------------------------------------*/
+.section11-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #FFF7E1;
+}
+
+.travellers-choice-award-container {
+  width: 75%;
+  display: flex;
+  gap: 3%;
+}
+
+.travellers-choice-award_section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 50px 0;
+}
+
+.travellers-choice-award__title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.travellers-choice-award__desc {
+  font-size: 24px;
+}
+
+.travellers-choice-award__button {
+  margin-top: 15px;
+}
+
+.travellers-choice-award__button a{
+  background-color: black;
+  color: white;
+  display: inline;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+
+.travellers-choice-award_section2 {
+  width: 100%;
+  height: 100%;
+}
+
+.travellers-choice-award_section2 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------------Footer--------------------------------------------------*/
+
+.footer{
+  background-color: #f2f2f2;
+}
+
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+  font-size: smaller;
+  padding: 3% 13% 0 13%;
+}
+
+.footer__content_cart p{
+  font-weight: 500;
+}
+
+.footer__content_cart ul li a{
+  color: black;
+}
+
+.footer__content_cart ul li a:hover{
+  text-decoration: underline;
+  color: skyblue;
+  transition: 0.2s;
+}
+
+.footer__l{
+  margin: 3% 13% 0 13%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__la p{
+  font-size: xx-small;
+  width: 95%;
+}
+
+.footer__last{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__last__sec{
+  font-size: smaller;
+}
+
+.footer__last__sec__content ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+  column-gap: 10px;
+}
+
+.footer__l__2{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__l__icons i{
+  padding: 12px;
+  font-size: x-large;
+}

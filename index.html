@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Advisor</title>
+    <!-----------------------------CSS File Link--------------------------------->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!----------------------Google Fonts Link----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-----------------------------Font Awesome Link--------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!------------------------------------Nav Bar-------------------------------------------------------->
+    <section class="section1-navbar">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"
+            ><img src="./assets/Trip Advisor Logo.svg" alt="Trip Advisor Logo"
+          /></a>
+        </div>
+        <div class="navbar-lists">
+          <p><a href="#">Discover</a></p>
+          <p><a href="#">Trips</a></p>
+          <p><a href="#">Review</a></p>
+          <p><a href="#">Forums</a></p>
+        </div>
+        <div class="navbar-buttons">
+          <div class="lang-currency">
+            <a href="#"
+              ><i class="fa-solid fa-earth-americas" style="color: #000000"></i
+              >INR</a
+            >
+          </div>
+          <div class="sign-in"><a href="#">Sign In</a></div>
+        </div>
+      </nav>
+    </section>
+    <!---------------------------------------------Main Content---------------------------------------->
+    <section class="section2-main">
+      <div class="where-to">
+        <h1>Where to?</h1>
+      </div>
+      <div class="tabs">
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.889 3.542a.25.25 0 0 0-.278 0l-8 5.333a.25.25 0 0 0-.111.208v10.465c0 .138.112.25.25.25h16a.25.25 0 0 0 .25-.25V9.083a.25.25 0 0 0-.111-.208zm-1.11-1.248a1.75 1.75 0 0 1 1.942 0l8 5.333c.487.325.779.871.779 1.456v10.465a1.75 1.75 0 0 1-1.75 1.75h-16A1.75 1.75 0 0 1 2 19.548V9.083c0-.585.292-1.131.78-1.456z"
+            ></path>
+          </svg>
+          <p class="tab-names">Search all</p></a
+        >
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.252 5.405c0-.47.38-.85.85-.85h15.624c.47 0 .85.38.85.85v6.649c.68.562 1.22 1.393 1.22 2.544v4.847h-1.5V17.77H3.704v1.674h-1.5V14.57c.025-.654.304-1.588 1.049-2.35zm2.635 5.587q.394-.052.836-.052h3.896c-.503-.482-1.31-.93-2.433-.93-1.09 0-1.83.467-2.3.982m7.389-.052h4.468l.036.004q.245.022.536.082a2 2 0 0 0-.221-.233c-.447-.41-1.18-.783-2.254-.783-1.078 0-1.75.273-2.18.584a2.4 2.4 0 0 0-.385.346m5.8-1.282c-.726-.651-1.812-1.148-3.235-1.148-1.347 0-2.338.347-3.06.868-.342.248-.61.525-.821.802-.736-.861-2.005-1.67-3.774-1.67-1.629 0-2.733.712-3.434 1.503V6.055h14.324zM3.703 16.27h16.594v-1.673c0-.703-.355-1.188-.888-1.545-.56-.374-1.263-.561-1.74-.613H6.724c-1.118 0-1.81.317-2.237.678-.57.482-.765 1.123-.783 1.496z"
+            ></path>
+          </svg>
+          <p class="tab-names">Hotels</p></a
+        >
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.25 4.75h19.5v4.454l-.536.16a2.752 2.752 0 0 0 0 5.272l.536.16v4.454H2.25v-4.454l.536-.16a2.752 2.752 0 0 0 0-5.272l-.536-.16zm1.5 1.5v1.876a4.25 4.25 0 0 1 0 7.748v1.876h16.5v-1.876a4.25 4.25 0 0 1 0-7.748V6.25z"
+            ></path>
+            <path
+              d="M12 14.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-3.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-3.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+            ></path>
+          </svg>
+          <p class="tab-names">Things to Do</p></a
+        >
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.578 4.891 16.25 2.22l1.06 1.06-2.671 2.672c-.679.679-1.055 1.462-1.12 2.199-.043.5.054 1.003.327 1.472L18.75 4.72l1.06 1.06-4.906 4.906c.473.281.974.387 1.466.354.718-.047 1.467-.394 2.096-1.023A904 904 0 0 0 21.02 7.45l.226-.228h.001l1.066 1.055-.227.23a957 957 0 0 1-2.56 2.57c-.849.849-1.927 1.384-3.057 1.459a4.03 4.03 0 0 1-2.647-.768L12.591 13l7.72 7.72-1.061 1.06-5.97-5.97-3 3-1.75-1.75-4.72 4.72-1.06-1.06L7.47 16l-4.392-4.391a4.75 4.75 0 0 1 0-6.718l.702-.702 7.75 7.75 1.233-1.232a3.97 3.97 0 0 1-.737-2.686c.1-1.147.669-2.246 1.552-3.13M12.22 14.75 3.808 6.338a3.25 3.25 0 0 0 .33 4.21l6.142 6.141z"
+            ></path>
+          </svg>
+          <p class="tab-names">Restaurant</p></a
+        >
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              d="m9.412 22.286-7.63-7.89 1.87-1.87 3.39.6c.08 0 .5 0 .73-.21l2.15-2.08c.02-.05.04-.13.04-.16 0-.02-.07-.1-.26-.19l-7.2-3.32 2.74-2.68 8.83 1.59c.2.02.49.02.62 0l3.21-3.24c.86-.78 2.58-1.75 3.76-.58 1.17 1.17.24 2.88-.49 3.71l-3.16 3.23c-.02.06-.05.24.01.61l1.52 8.83-2.7 2.43-3.29-6.84a.5.5 0 0 0-.18-.14l-2.49 2.33s-.01.15.01.3l.55 3.62-2.04 1.95zm-5.53-7.87 5.57 5.75.4-.38-.43-2.85c-.16-1.04.25-1.5.51-1.68l2.42-2.24c.45-.42.91-.46 1.2-.43.73.08 1.18.69 1.27.81l.06.1 2.45 5.1.59-.54-1.38-8.01c-.21-1.22.19-1.75.44-1.96l3.09-3.15c.25-.29.89-1.26.53-1.63-.36-.36-1.36.32-1.66.6l-3.27 3.29c-.47.45-1.35.42-1.83.35l-8.1-1.45-.63.62 5.21 2.4c.73.33.99.82 1.08 1.17.2.75-.23 1.38-.28 1.45l-.09.11-2.24 2.17c-.78.71-1.85.62-1.96.6l-2.67-.47-.27.27z"
+            ></path>
+          </svg>
+          <p class="tab-names">Flights</p></a
+        >
+        <a href="#" class="tab-names">
+          <svg
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="d Vb egaXP UmNoP"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="m11.995 2.174 9.76 6.5v13.152H2.245V8.674zm0 1.803-8.25 5.5v10.849h16.51V9.477zm-2.99 8.359a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m-2.75 1.25a2.75 2.75 0 0 1 5.396-.75h6.344v1.5h-2.25v2.25h-1.5v-2.25h-2.594a2.751 2.751 0 0 1-5.396-.75"
+            ></path>
+          </svg>
+          <p class="tab-names">Holiday Homes</p></a
+        >
+      </div>
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <div class="search">
+            <svg
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              class="d Vb UmNoP"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.12 4.14a5.99 5.99 0 1 0 0 11.98 5.99 5.99 0 0 0 0-11.98m-7.49 5.99a7.49 7.49 0 1 1 13.299 4.728L21.37 20.3l-1.06 1.061-5.44-5.44A7.49 7.49 0 0 1 2.63 10.13"
+              ></path>
+            </svg>
+            <input
+              type="text"
+              placeholder="Places to go, Things to do, Hotels..."
+            />
+          </div>
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </section>
+    <section class="section3-main">
+      <div class="body-ai-image">
+        <div class="ai-image">
+          <img src="./assets/Body AI image.png" alt="AI Image" />
+          <div class="ai-image-desc">
+            <p class="ai-image-desc__1">
+              Powered by AI <span class="beta">BETA</span>
+            </p>
+            <p class="ai-image-desc__2">AI trip builder</p>
+            <p class="ai-image-desc__3">gets you out there</p>
+            <p class="ai-image-desc__4">Get a whole getway's worth of ideas</p>
+            <p class="ai-image-desc__5">Made for you-ready in seconds.</p>
+            <a href="#" class="try-it-button">
+              <svg
+                viewBox="0 0 24 24"
+                width="20px"
+                height="20px"
+                class="d Vb UmNoP"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.53 5.116a5.27 5.27 0 0 1-3.118-3.118c-.108-.294-.534-.294-.642 0a5.24 5.24 0 0 1-3.115 3.118c-.294.108-.294.534 0 .642a5.27 5.27 0 0 1 3.118 3.118c.108.294.534.294.642 0a5.27 5.27 0 0 1 3.118-3.118c.294-.108.294-.534 0-.642zm1.735-.418a.746.746 0 0 0 0 1.493c3.056 0 5.528 2.45 5.528 5.401 0 1.549-.806 3.252-2.05 4.952-1.095 1.495-2.404 2.828-3.468 3.882-1.07-1.054-2.399-2.401-3.503-3.91-1.234-1.69-2.033-3.382-2.033-4.924a.746.746 0 1 0-1.493 0c0 2.019 1.024 4.029 2.32 5.804 1.299 1.774 2.872 3.32 3.98 4.407l.04.04.16.16a.746.746 0 0 0 1.048.01l.15-.146.02-.02.053-.056.003-.002c1.102-1.09 2.645-2.613 3.927-4.362 1.306-1.785 2.339-3.808 2.339-5.835 0-3.803-3.168-6.894-7.021-6.894m-1.02 5.244a1.266 1.266 0 0 1 1.647.666 1.22 1.22 0 0 1-.678 1.599 1.266 1.266 0 0 1-1.647-.666 1.22 1.22 0 0 1 .679-1.6m-.566-1.389c1.397-.57 3.01.077 3.596 1.475a2.72 2.72 0 0 1-1.495 3.568c-1.397.57-3.01-.078-3.596-1.476a2.717 2.717 0 0 1 1.495-3.567M5.555 7.17a3.76 3.76 0 0 0 2.228 2.227h.002c.21.077.21.382 0 .459a3.77 3.77 0 0 0-2.228 2.227c-.077.21-.38.21-.458 0a3.77 3.77 0 0 0-2.227-2.227c-.21-.077-.21-.382 0-.459A3.74 3.74 0 0 0 5.097 7.17c.077-.21.381-.21.458 0"
+                ></path>
+              </svg>
+              <p>Try it</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4-main">
+      <div class="partnership-card-corona-container">
+        <div class="partnership-card-corona">
+          <div class="partnership-card-corona__image">
+            <img src="./assets/corona.png" alt="corona" />
+          </div>
+          <div class="partnership-card-corona__desc">
+            <p class="partnership-card-corona__desc1">
+              In partnership with corona
+            </p>
+            <p class="partnership-card-corona__desc2">
+              Toffino's Nature Sanctuary: serene, beaches, lush trails and
+              dazzling sunsets
+            </p>
+            <p class="partnership-card-corona__desc3">
+              Connect with nature’s dramatic coastal landscapes, peaceful
+              woodland terrain, and majestic wildlife in this seaside Canadian
+              town on the West Coast of Vancouver Island. With its sensational
+              sunsets, tree-dotted beaches, and rainforest treks, Tofino rewards
+              your will to explore with extraordinary outdoor experiences you’ll
+              never forget.
+            </p>
+          </div>
+          <!-- <div class="partnership-card-corona__button">
+            <a href="#">View More</a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="section5-main">
+      <div class="travellers-choice-awards-container">
+        <div class="travellers-choice-award__title">
+          <p class="travellers-choice-award__title1">
+            Treat yourself to an award-winning meal
+          </p>
+          <p class="travellers-choice-award__title2">
+            2024’s Travellers’ Choice Awards Best of the Best Restaurants
+          </p>
+        </div>
+        <div class="travellers-choice-awards-card-container">
+          <div class="travellers-choice-awards-card">
+            <img
+              src="./assets/Travellers choice awards/fine-dining.png"
+              alt="Fine Dining"
+            />
+            <div class="travellers-choice-awards-card-image_desc">
+              <p>Fine Dining</p>
+            </div>
+          </div>
+          <div class="travellers-choice-awards-card">
+            <img
+              src="./assets/Travellers choice awards/Date-night.png"
+              alt="Date Night"
+            />
+            <div class="travellers-choice-awards-card-image_desc">
+              <p>Date Night</p>
+            </div>
+          </div>
+          <div class="travellers-choice-awards-card">
+            <img
+              src="./assets/Travellers choice awards/casual-dining.png"
+              alt="Casual Dining"
+            />
+            <div class="travellers-choice-awards-card-image_desc">
+              <p>Casual Dining</p>
+            </div>
+          </div>
+          <div class="travellers-choice-awards-card">
+            <img
+              src="./assets/Travellers choice awards/hidden-gems.png"
+              alt="Hidden hidden-gems"
+            />
+            <div class="travellers-choice-awards-card-image_desc">
+              <p>Hidden Gems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section6-main">
+      <div class="fav-places-container">
+        <div class="fav-places-titles">
+          <p class="fav-places-title1">
+            Get inspired by our fave travel creators
+          </p>
+          <p class="fav-places-title2">
+            Tried-and-true guidance to fuel your next big trip
+          </p>
+        </div>
+        <div class="fav-places-card-container">
+          <div class="fav-places-card">
+            <div class="fav-places-card-img">
+              <img src="./assets/Fav Places/fav-place-img4.png" alt="Chicago" />
+            </div>
+            <div class="fav-places-card-desc">
+              <p class="fav-places-card_desc1">By Felicia Wong</p>
+              <p class="fav-places-card_desc2">
+                An unforgettable Yellowstone road trip
+              </p>
+              <p class="fav-places-card_desc3">
+                <i class="fa-solid fa-heart" style="color: #f76565"></i>
+                <span class="fav-places-card_desc3_span">30 items</span>
+              </p>
+            </div>
+          </div>
+          <div class="fav-places-card">
+            <div class="fav-places-card-img">
+              <img src="./assets/Fav Places/fav-place-img2.png" alt="Mexico" />
+            </div>
+            <div class="fav-places-card-desc">
+              <p class="fav-places-card_desc1">By Eileen Ivette</p>
+              <p class="fav-places-card_desc2">
+                The ultimate 'workcation' in Mexico
+              </p>
+              <p class="fav-places-card_desc3">
+                <i class="fa-solid fa-heart" style="color: #f76565"></i>
+                <span class="fav-places-card_desc3_span">37 items</span>
+              </p>
+            </div>
+          </div>
+          <div class="fav-places-card">
+            <div class="fav-places-card-img">
+              <img
+                src="./assets/Fav Places/fav-place-img3.png"
+                alt="Barcelona"
+              />
+            </div>
+            <div class="fav-places-card-desc">
+              <p class="fav-places-card_desc1">By Two Bad Tourists</p>
+              <div class="fav-places-card_desc2_desc3"></div>
+              <p class="fav-places-card_desc2">Exploring friendly Barcelona</p>
+              <p class="fav-places-card_desc3">
+                <i class="fa-solid fa-heart" style="color: #f76565"></i>
+                <span class="fav-places-card_desc3_span">28 items</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section7-main">
+      <div class="ways-to-tour">
+        <div class="ways-to-tour-titles">
+          <p class="ways-to-tour-title1">Ways to tour Chennai (Madras)</p>
+          <p class="ways-to-tour-title2">
+            Book these experiences for a close-up look at Chennai (Madras).
+          </p>
+        </div>
+        <div class="ways-to-tour-card-container">
+          <div class="ways-to-tour-card">
+            <div class="ways-to-tour-card_img">
+              <img
+                src="./assets/Ways to tour/ways-to-tour-img1.png"
+                alt="Mahabalipuram & Kanchipuram"
+              />
+              <div class="wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ways-to-tour-card_desc">
+              <p class="ways-to-tour-card_desc1">
+                Mahabalipuram & Kanchipuram in a day from Chennai by private car
+                with guide
+              </p>
+              <p class="ways-to-tour-card_desc2">
+                <svg
+                  class="rating"
+                  viewBox="0 0 128 24"
+                  width="68"
+                  height="12"
+                  aria-labelledby=":lithium-R1bh8qkldlanknvlq:"
+                >
+                  <title id=":lithium-R1bh8qkldlanknvlq:"></title>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform=""
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(26 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(52 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(78 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(104 0)"
+                  ></path>
+                </svg>
+                <span class="ways-to-tour-card_desc2_rating">213</span>
+              </p>
+              <p class="ways-to-tour-card_desc3">from ₹11,628 per adult</p>
+            </div>
+          </div>
+          <div class="ways-to-tour-card">
+            <div class="ways-to-tour-card_img">
+              <img
+                src="./assets/Ways to tour/ways-to-tour-img2.png"
+                alt="Pondicherry"
+              />
+              <div class="wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ways-to-tour-card_desc">
+              <p class="ways-to-tour-card_desc1">
+                Auroville and Pondicherry Tour from Chennai
+              </p>
+              <p class="ways-to-tour-card_desc2">
+                <svg
+                  class="rating"
+                  viewBox="0 0 128 24"
+                  width="68"
+                  height="12"
+                  aria-labelledby=":lithium-R1bh8qkldlanknvlq:"
+                >
+                  <title id=":lithium-R1bh8qkldlanknvlq:"></title>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform=""
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(26 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(52 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(78 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(104 0)"
+                  ></path>
+                </svg>
+                <span class="ways-to-tour-card_desc2_rating">5</span>
+              </p>
+              <p class="ways-to-tour-card_desc3">from ₹3,790 per adult</p>
+            </div>
+          </div>
+          <div class="ways-to-tour-card">
+            <div class="ways-to-tour-card_img">
+              <img
+                src="./assets/Ways to tour/ways-to-tour-img3.png"
+                alt="South India Temple"
+              />
+              <div class="wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ways-to-tour-card_desc">
+              <p class="ways-to-tour-card_desc1">
+                South India Temple Tour - 14n15d
+              </p>
+              <p class="ways-to-tour-card_desc2">
+                <svg
+                  class="rating"
+                  viewBox="0 0 128 24"
+                  width="68"
+                  height="12"
+                  aria-labelledby=":lithium-R1bh8qkldlanknvlq:"
+                >
+                  <title id=":lithium-R1bh8qkldlanknvlq:"></title>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform=""
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(26 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(52 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(78 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(104 0)"
+                  ></path>
+                </svg>
+                <span class="ways-to-tour-card_desc2_rating">13</span>
+              </p>
+              <p class="ways-to-tour-card_desc3">from ₹63,467 per adult</p>
+            </div>
+          </div>
+          <div class="ways-to-tour-card">
+            <div class="ways-to-tour-card_img">
+              <img
+                src="./assets/Ways to tour/ways-to-tour-img4.png"
+                alt="Chennai city tour"
+              />
+              <div class="wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ways-to-tour-card_desc">
+              <p class="ways-to-tour-card_desc1">
+                Total Chennai city tour in Private car with guide & lunch by
+                Wonder tours
+              </p>
+              <p class="ways-to-tour-card_desc2">
+                <svg
+                  class="rating"
+                  viewBox="0 0 128 24"
+                  width="68"
+                  height="12"
+                  aria-labelledby=":lithium-R1bh8qkldlanknvlq:"
+                >
+                  <title id=":lithium-R1bh8qkldlanknvlq:"></title>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform=""
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(26 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(52 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(78 0)"
+                  ></path>
+                  <path
+                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                    transform="translate(104 0)"
+                  ></path>
+                </svg>
+                <span class="ways-to-tour-card_desc2_rating">62</span>
+              </p>
+              <p class="ways-to-tour-card_desc3">from ₹6,460 per adult</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section8-main">
+      <div class="autumn-in-asia-container">
+        <div class="autumn-in-asia__title">
+          <p class="autumn-in-asia__title1">Autumn in Asia</p>
+          <p class="autumn-in-asia__title2">
+            Cool temps, exciting festivities, and a kaleidoscope of reds,
+            yellows and oranges
+          </p>
+        </div>
+        <div class="autumn-in-asia-card-container">
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Atumn in Asia/autumn-in-asia-card-img1.png"
+              alt="Kyoto, Japan"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Kyoto, Japan</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Atumn in Asia/autumn-in-asia-card-img2.png"
+              alt="Hanoi, Vietnam"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Hanoi, Vietnam</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Atumn in Asia/autumn-in-asia-card-img3.png"
+              alt="Beijing, China"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Beijing, China</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Atumn in Asia/autumn-in-asia-card-img4.png"
+              alt="Seol, South Korea"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Seol, South Korea</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section9-main">
+      <div class="more-to-explore-container">
+        <div class="more-to-explore-title">
+          <p class="more-to-explore_title1">More to explore</p>
+        </div>
+        <div class="more-to-explore-card-container">
+          <div class="more-to-explore-card">
+            <div class="more-to-explore-card_img">
+              <img
+                src="./assets/More to explore/more-to-explore-img1.png"
+                alt="Mahabalipuram & Kanchipuram"
+              />
+              <div class="more-to-explore-wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="more-to-explore-card_desc">
+              <p class="more-to-explore-card_desc1">
+                Your guide to Latin America travel and culturey
+              </p>
+            </div>
+          </div>
+          <div class="more-to-explore-card">
+            <div class="more-to-explore-card_img">
+              <img
+                src="./assets/More to explore/more-to-explore-img2.png"
+                alt="Mahabalipuram & Kanchipuram"
+              />
+              <div class="more-to-explore-wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="more-to-explore-card_desc">
+              <p class="more-to-explore-card_desc1">
+                6 incredible places to visit near Phuket
+              </p>
+            </div>
+          </div>
+          <div class="more-to-explore-card">
+            <div class="more-to-explore-card_img">
+              <img
+                src="./assets/More to explore/more-to-explore-img3.png"
+                alt="Mahabalipuram & Kanchipuram"
+              />
+              <div class="more-to-explore-wishlist">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  height="24px"
+                  class="whishlist"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="more-to-explore-card_desc">
+              <p class="more-to-explore-card_desc1">
+                11 gorgeous places in India that have to be seen to be believed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section10-main">
+      <div class="top-destinations-container">
+        <div class="autumn-in-asia__title">
+          <p class="autumn-in-asia__title1">
+            Top destinations for your next holiday
+          </p>
+          <p class="autumn-in-asia__title2">
+            Here's where your fellow travellers are headed
+          </p>
+        </div>
+        <div class="autumn-in-asia-card-container">
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Top Destinations/top-destinations-img1.png"
+              alt="Phuket, Thailand"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Phuket, Thailand</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Top Destinations/top-destinations-img2.png"
+              alt="Bali, Indonesia"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Bali, Indonesia</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Top Destinations/top-destinations-img3.png"
+              alt="Dubai, United Arab Emirates"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="autumn-in-asia-card">
+            <img
+              src="./assets/Top Destinations/top-destinations-img4.png"
+              alt="Cairns, Australia"
+            />
+            <div class="autumn-in-asia-card-image_desc">
+              <p>Cairns, Australia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section11-main">
+      <div class="travellers-choice-award-container">
+        <div class="travellers-choice-award_section1">
+          <div class="travellers-choice-award__logo">
+            <img
+              src="https://static.tacdn.com/img2/travelers_choice/2023/TC_badge_yellow.svg"
+              alt="Trip Advisor Logo"
+            />
+          </div>
+
+          <p class="travellers-choice-award__title">
+            Travellers' Choice Awards Best of the Best
+          </p>
+          <p class="travellers-choice-award__desc">
+            Among our top 1% of places, stays, eats, and experiences—decided by
+            you.
+          </p>
+
+          <div class="travellers-choice-award__button">
+            <a href="#">See the winners</a>
+          </div>
+        </div>
+        <div class="travellers-choice-award_section2">
+          <img src="./assets/travellers-choise-best-award-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__content">
+            <div class="footer__content_cart">
+                <p>About tripadivisor</p>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Resources and Policies</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Trust & Safety</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Accessibility Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer__content_cart">
+                <p>Explore</p>
+                <ul>
+                    <li><a href="">Write a review</a></li>
+                    <li><a href="">Add a Place</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Travelers' Choice</a></li>
+                    <li><a href="">GreenLeaders</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Travel Articles</a></li>
+                </ul>
+            </div>
+            <div class="footer__content_cart">
+                <p>Do Business With Us</p>
+                <ul>
+                    <li><a href="">Owners</a></li>
+                    <li><a href="">Business Advantage</a></li>
+                    <li><a href="">Sponsored Placements</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Advertise with Us</a></li>
+                    <li><a href="">Access our Content API</a></li>
+                    <li><a href="">Become an Affiliate</a></li>
+                    <p>Get The App</p>
+                    <li><a href="">iPhone App</a></li>
+                    <li><a href="">Android App</a></li>
+                </ul>
+            </div>
+            <div class="footer__content_cart">
+                <p>Tripadvisor Sites</p>
+                <ul>
+                    <li>
+                        <p>Book the best restaurants with TheFork</p>
+                    </li>
+                    <ul>
+                        <li>
+                            <p>Book tours and attraction tickets on Viator</p>
+                        </li>
+                        <ul>
+                            <li>
+                                <p>Read cruise reviews on Cruise Critic</p>
+                            </li>
+                            <ul>
+                                <li>
+                                    <p>Get airline seating charts on Seat Guru</p>
+                                </li>
+                                <ul>
+                                    <li>
+                                        <p>Find vacation rentals on FlipKey</p>
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            <p>Search for holiday rentals on Holiday Lettings</p>
+                                        </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="footer__l">
+            <div class="footer__la">
+                <div class="footer__last">
+                    <div class="footer__last__image">
+                        <img src="./assets/footerlogo.png" alt="" style="width: 40px;">
+                    </div>
+                    <div class="footer__last__sec">
+                        <p>© 2024 Tripadvisor LLC All rights reserved.</p>
+                        <div class="footer__last__sec__content">
+                            <ul>
+                                <li><a href="">term of use</a></li>
+                                <li><a href="">Privacy and Cookies Statement</a></li>
+                                <li><a href="">Cookie consent</a></li>
+                                <li><a href="">Site Map</a></li>
+                                <li><a href="">How the site works</a></li>
+                                <li><a href="">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>This is the version of our website addressed to speakers of English in the United States. If you are
+                    a
+                    resident of another country or region,
+                    please select the appropriate version of Tripadvisor for your country or region in the drop-down
+                    menu. more
+                </p>
+            </div>
+            <div class="foo">
+                <div class="footer__l__2">
+                    <div class="footer__l__2__button1">
+                        <form action="">
+                            <select name="currency"
+                                style="padding:3px;box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.24); padding-right: 70px; border-radius: 10px;">
+                                <option value="1">$USD</option>
+                                <option value="2">EUR</option>
+                                <option value="3">INR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="footer__l__2__button1">
+                        <form action="">
+                            <select name="currency"
+                                style="padding:3px;box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.24); padding-right: 70px; border-radius: 10px;">
+                                <option value="1">united states</option>
+                                <option value="2">India</option>
+                                <option value="3">europe</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__l__icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
