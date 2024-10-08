@@ -303,6 +303,11 @@ a {
   margin-bottom: 13px;
 }
 
+.travellers-choice-award__title2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .travellers-choice-awards-card-container {
   display: flex;
   width: 100%;
